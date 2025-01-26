@@ -1,26 +1,26 @@
-import React from 'react'
-import Mobiles from './Mobiles'
-  import Computers from './Computers'
-import Men from './Men'
-import Kitchen from './Kitchen'
-import Furniture from './Furniture'
-import Ac from './Ac'
-import Watches from './Watches'
-import WomenDressing from './WomenDressing'
+import React from "react";
+import Mobiles from "./Mobiles";
+import Computers from "./Computers";
+import Watch from "./Watch";
+import Men from "./Men";
+import Woman from "./Woman";
+import Furniture from "./Furniture";
+import AC from "./AC";
+import Kitchen from "./Kitchen";
 
 const Products = () => {
   return (
     <div>
-  <Mobiles/>
-  <Computers/>
-  <Ac/>
-  <Furniture/>
-  <Kitchen/>
-  <Men/>
-  <Watches/>
-  <WomenDressing/>
+      <Mobiles />
+      <Computers />
+      <Watch />
+      <Men />
+      <Woman />
+      <Furniture />
+      <AC />
+      <Kitchen />
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
