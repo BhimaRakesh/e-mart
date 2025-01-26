@@ -1,27 +1,33 @@
+
 import React from 'react'
 import { menData } from '../data/men'
+import { Link } from 'react-router-dom'
 
 const Men = () => {
-    const firstFiveMen =menData.slice(0,5)
+
+    const firstFiveImages = menData.slice(0,5)
+
+  return (
+    <>
+     <div className="proTitle">
+        <h2>Men Fashion</h2>
+      </div>
+    <div className='proSection'>
+         {
+             firstFiveImages.map((item)=>{
+                 return(
+                     <div className='imgBox'>
+                      <Link to='/men'>
+                         <img className='proImage' src={item.image} alt="" />
+                      </Link>
+                     </div>
+                 )
+             })
+         }
+     </div>
     
-      return (
-      <>
-      MEN'S WEAR
-        <div className='proSection'>
-          {
-            
-            firstFiveMen.map((item,index)=>{
-              return(
-                <div className='ImageBox' key={index}>
-                <img className='proImage' src={item.image} alt="mens wear"/>
-                </div>
-              )
-            })
-          }
-        </div>
-      </>
-      )
-    }
-    
+    </>
+  )
+}
 
 export default Men
