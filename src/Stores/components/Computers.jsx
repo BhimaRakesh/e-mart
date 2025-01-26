@@ -26,8 +26,4 @@ const Computers = () => {
   );
 };
 
-<<<<<<< HEAD
-export default Computers;
-=======
-export default Computers;
->>>>>>> f3949155b159b6378e3c1394403c608820ee6bbd
+export default Computers
