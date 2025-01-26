@@ -1,20 +1,20 @@
 import React from "react";
-import { acData } from "../data/ac";
+import { womanData } from "../data/woman";
 import { Link } from "react-router-dom";
 
-const Ac = () => {
-  const firstFiveImages = acData.slice(0, 5);
+const WomanDressing = () => {
+  const firstFiveImages = womanData.slice(0, 5);
 
   return (
     <>
       <div className="proTitle">
-        <h2>Air Condition</h2>
+        <h2>Woman Dressing</h2>
       </div>
       <div className="proSection">
         {firstFiveImages.map((item) => {
           return (
             <div className="imgBox">
-              <Link to='/ac'>
+              <Link to='/woman'>
               <img className="proImage" src={item.image} alt="" />
               </Link>
             </div>
@@ -25,4 +25,4 @@ const Ac = () => {
   );
 };
 
-export default Ac;
+export default WomanDressing;

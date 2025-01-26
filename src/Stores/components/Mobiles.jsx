@@ -1,25 +1,34 @@
+
 import React from 'react'
+
+
 import { mobileData } from '../data/mobiles'
+import { Link } from 'react-router-dom'
+
 
 const Mobiles = () => {
-const firstFiveImages = mobileData.slice(0,5)
 
+    const firstFiveImages = mobileData.slice(0,5)
 
   return (
    <>
-   MOBILES
-    <div>
-        <div className="proSection">
-      {
-      firstFiveImages.map((item ,index)=>{
-        return(
-            <div className="ImageBox" key={index}>
-            <img className="proImage"src = {item.image} alt = "g"/>
-            </div>
-        )
-      })}
+    <div className="proTitle">
+        <h2>Mobiles</h2>
       </div>
+   <div className='proSection'>
+        {
+            firstFiveImages.map((item)=>{
+                return(
+                    <div className='imgBox'>
+                        <Link to='/mobiles'>
+                        <img className='proImage' src={item.image} alt="" />
+                   </Link>
+                    </div>
+                )
+            })
+        }
     </div>
+   
    </>
   )
 }
