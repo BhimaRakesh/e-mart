@@ -13,9 +13,15 @@ const Products = () => {
     <div>
       <Mobiles />
       <Computers />
+<<<<<<< HEAD
       <Watches />
       <Men />
       <WomanDressing />
+=======
+      <Watch />
+      <Men />
+      <Woman />
+>>>>>>> f3949155b159b6378e3c1394403c608820ee6bbd
       <Furniture />
       <AC />
       <Kitchen />
@@ -23,4 +29,8 @@ const Products = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Products;
+=======
+export default Products;
+>>>>>>> f3949155b159b6378e3c1394403c608820ee6bbd
