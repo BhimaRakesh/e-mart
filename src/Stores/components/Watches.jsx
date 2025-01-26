@@ -1,26 +1,30 @@
 import React from 'react'
 import { watchData } from '../data/watch'
+import { Link } from 'react-router-dom'
 
-const Watches = () => {
- const firstFiveWatches =watchData.slice(0,5)
- 
-   return (
+const Watch = () => {
+
+    const firstFiveImages = watchData.slice(0,5)
+
+  return (
     <>
-    WATCHES
-     <div className='proSection'>
-       {
-         
-         firstFiveWatches.map((item ,index)=>{
-           return(
-             <div className='ImageBox' key={index}>
-             <img className='proImage' src={item.image} alt="watches"/>
-             </div>
-           )
-         })
-       }
+    <h2>Watches</h2>
+    <div className='proSection'>
+         {
+             firstFiveImages.map((item)=>{
+                 return(
+                     <div className='imgBox'>
+                        <Link to='/watch'>
+                         <img className='proImage' src={item.image} alt="" />
+                        </Link>
+                     </div>
+                 )
+             })
+         }
      </div>
+    
     </>
-   )
- }
+  )
+}
 
-export default Watches
+export default Watch
