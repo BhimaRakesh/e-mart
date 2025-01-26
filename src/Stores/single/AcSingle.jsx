@@ -1,4 +1,4 @@
-import React from "react";
+
 import { acData } from "../data/ac";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
@@ -8,7 +8,7 @@ import { useCart } from "../context/CartContext";
 const AcSingle = () => {
   const { id } = useParams();
 
-  const {addToCart, cartItems} = useCart()
+  const {addToCart} = useCart()
 
   const product = acData.find((item) => item.id === id);
 

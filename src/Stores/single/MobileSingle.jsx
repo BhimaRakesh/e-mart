@@ -1,4 +1,4 @@
-import React from "react";
+
 import { mobileData } from "../data/mobiles";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
@@ -8,7 +8,7 @@ import { useCart } from "../context/CartContext";
 const MobileSingle = () => {
   const { id } = useParams();
 
-  const {addToCart, cartItems} = useCart()
+  const {addToCart} = useCart()
 
   const product = mobileData.find((item) => item.id === id);
 

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { kitchenData } from "../data/kitchen";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
@@ -8,7 +8,7 @@ import { useCart } from "../context/CartContext";
 const KitchenSingle = () => {
   const { id } = useParams();
 
-  const {addToCart, cartItems} = useCart()
+  const {addToCart} = useCart()
 
   const product = kitchenData.find((item) => item.id === id);
 

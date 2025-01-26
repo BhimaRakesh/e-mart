@@ -1,4 +1,4 @@
-import React from "react";
+
 import { computerData } from "../data/computers";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
@@ -8,7 +8,7 @@ import { useCart } from "../context/CartContext";
 const ComputerSingle = () => {
   const { id } = useParams();
 
-  const {addToCart, cartItems} = useCart()
+  const {addToCart} = useCart()
 
   const product = computerData.find((item) => item.id === id);
 
