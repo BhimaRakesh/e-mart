@@ -2,7 +2,7 @@ import React from "react";
 import { womanData } from "../data/woman";
 import { Link } from "react-router-dom";
 
-const Woman = () => {
+const WomanDressing = () => {
   const firstFiveImages = womanData.slice(0, 5);
 
   return (
@@ -25,4 +25,4 @@ const Woman = () => {
   );
 };
 
-export default Woman;
+export default WomanDressing;
