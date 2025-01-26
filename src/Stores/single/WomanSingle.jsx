@@ -1,4 +1,4 @@
-
+import React from "react";
 import { womanData } from "../data/woman";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";

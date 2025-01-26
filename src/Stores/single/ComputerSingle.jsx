@@ -1,4 +1,4 @@
-
+import React from "react";
 import { computerData } from "../data/computers";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";

@@ -1,4 +1,4 @@
-
+import React from "react";
 import { watchData } from "../data/watch";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";

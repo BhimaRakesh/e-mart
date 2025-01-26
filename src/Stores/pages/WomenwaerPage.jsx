@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import React, { useState } from 'react'
 import { womanData } from '../data/woman'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
@@ -26,9 +26,9 @@ return (
     
 <div className="pro-selected">
 
-{womanData.map((phone ,index)=>{
+{womanData.map((phone)=>{
     return(
-        <div className='pro-input' key={index}>
+        <div className='pro-input'>
             <label >
                 <input type="checkbox" 
                 checked = {selectedProduct.includes(phone.brand)}
@@ -43,12 +43,12 @@ return (
 </div>
 h
 <div className='pageSection'>
-    {filteredProduct.map((item ,index)=>{
+    {filteredProduct.map((item)=>{
         return(
             <div>
 
             <Link to={`/women/${item.id}`}>
-                <div className="pageImg" key={index}>
+                <div className="pageImg">
                     <img src={item.image} alt="" />
                 </div>
             </Link>

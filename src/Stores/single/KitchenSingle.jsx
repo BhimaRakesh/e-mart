@@ -1,4 +1,4 @@
-
+import React from "react";
 import { kitchenData } from "../data/kitchen";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";

@@ -1,4 +1,4 @@
-
+import React from "react";
 import { mobileData } from "../data/mobiles";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";

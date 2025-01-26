@@ -1,4 +1,4 @@
-
+import React from "react";
 import { furnitureData } from "../data/furniture";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
