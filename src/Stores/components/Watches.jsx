@@ -2,7 +2,7 @@ import React from 'react'
 import { watchData } from '../data/watch'
 import { Link } from 'react-router-dom'
 
-const Watch = () => {
+const Watches = () => {
 
     const firstFiveImages = watchData.slice(0,5)
 
