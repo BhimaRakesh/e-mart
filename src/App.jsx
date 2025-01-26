@@ -26,7 +26,7 @@ import TvPage from './Stores/pages/TvPage'
  import AcSingle from './Stores/single/AcSingle'
 import MenSingle from './Stores/single/MenSingle'
 import WatchSingle from './Stores/single/WatchSingle'
-import WomenSingle from './Stores/single/WomenSingle'
+import WomanSingle from './Stores/single/WomanSingle'
 import FridgeSingle from './Stores/single/FridgeSingle'
 
 
@@ -41,7 +41,7 @@ const App = () => {
         <Route path='/watch' element= {<WatchPage />} />
         <Route path='/fridge' element={<FridgePage />} />
         <Route path='/men' element= {<MenPage />} /> 
-        <Route path='/women' element= {<WomenwaerPage />} />             
+        <Route path='/woman' element= {<WomenwaerPage />} />             
         <Route path='/furniture' element= {<FurniturePage />} />  
         <Route path='/speakers' element= {<SpeakersPage />} />            
         <Route path='/ac' element= {<AcPage />} />  
@@ -56,7 +56,7 @@ const App = () => {
       <Route path='/kitchen/:id' element = {<KitchenSingle />} />
       <Route path='/men/:id' element = {<MenSingle />} />
       <Route path='/watch/:id' element = {<WatchSingle />} />
-      <Route path='/women/:id' element = {<WomenSingle />} />
+      <Route path='/woman/:id' element = {<WomanSingle />} />
       <Route path='/fridge/:id' element = {<FridgeSingle />} />
       </Routes>
     </div>

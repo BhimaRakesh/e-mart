@@ -49,8 +49,8 @@ const Navbar = () => {
             <li>Mens Wear</li>
           </Link>
 
-          <Link to="/women" className="custom-link">
-            <li>Women Wear</li>
+          <Link to="/woman" className="custom-link">
+            <li>Woman Wear</li>
           </Link>
 
           <Link to="/furniture" className="custom-link">
