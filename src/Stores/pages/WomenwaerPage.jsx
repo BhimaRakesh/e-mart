@@ -47,7 +47,7 @@ h
         return(
             <div>
 
-            <Link to={`/women/${item.id}`}>
+            <Link to={`/woman/${item.id}`}>
                 <div className="pageImg">
                     <img src={item.image} alt="" />
                 </div>

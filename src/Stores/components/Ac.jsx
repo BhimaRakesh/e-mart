@@ -25,8 +25,5 @@ const Ac = () => {
   );
 };
 
-<<<<<<< HEAD
+
 export default Ac;
-=======
-export default Ac;
->>>>>>> f3949155b159b6378e3c1394403c608820ee6bbd
