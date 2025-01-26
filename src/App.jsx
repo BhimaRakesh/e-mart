@@ -2,10 +2,8 @@
 
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-
 import './App.css'
 import LandingPage from './Stores/pages/LandingPage'
-//import KitchenPage from './Stores/components/KitchenPage'
 import MobilePage from './Stores/pages/MobilePage'
 import ComputerPage from './Stores/pages/ComputerPage'
 import WatchPage from './Stores/pages/WatchPage'
