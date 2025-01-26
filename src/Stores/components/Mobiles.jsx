@@ -11,9 +11,9 @@ const firstFiveImages = mobileData.slice(0,5)
     <div>
         <div className="proSection">
       {
-      firstFiveImages.map((item)=>{
+      firstFiveImages.map((item ,index)=>{
         return(
-            <div className="ImageBox">
+            <div className="ImageBox" key={index}>
             <img className="proImage"src = {item.image} alt = "g"/>
             </div>
         )

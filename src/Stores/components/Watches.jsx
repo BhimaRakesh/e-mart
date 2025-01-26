@@ -10,9 +10,9 @@ const Watches = () => {
      <div className='proSection'>
        {
          
-         firstFiveWatches.map((item)=>{
+         firstFiveWatches.map((item ,index)=>{
            return(
-             <div className='ImageBox'>
+             <div className='ImageBox' key={index}>
              <img className='proImage' src={item.image} alt="watches"/>
              </div>
            )

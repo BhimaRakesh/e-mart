@@ -10,9 +10,9 @@ const Ac = () => {
    <div className='proSection'>
     {
       
-      firstFiveAC.map((item)=>{
+      firstFiveAC.map((item , index)=>{
         return(
-          <div className='ImageBox'>
+          <div className='ImageBox' key={index}>
           <img className='proImage' src={item.image} alt="AC"/>
           </div>
         )

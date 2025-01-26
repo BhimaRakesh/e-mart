@@ -9,9 +9,9 @@ const WomenDressing = () => {
     <div className='proSection'>
     {
       
-      firstFiveWomenDress.map((item)=>{
+      firstFiveWomenDress.map((item ,index)=>{
         return(
-          <div className='ImageBox'>
+          <div className='ImageBox' key={index}>
           <img className='proImage' src={item.image} alt="womenDresses"/>
           </div>
         )

@@ -28,7 +28,7 @@ return (
 
 {filteredProduct.map((phone)=>{
     return(
-        <div className='pro-input'>
+        <div className='pro-input' >
             <label >
                 <input type="checkbox" 
                 checked = {selectedProduct.includes(phone.company)}
@@ -45,6 +45,7 @@ return (
 <div className='pageSection'>
     {filteredProduct.map((item)=>{
         return(
+          
             <div>
 
             <Link to={`/ac/${item.id}`}>
