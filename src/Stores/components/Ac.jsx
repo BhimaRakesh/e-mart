@@ -2,7 +2,7 @@ import React from "react";
 import { acData } from "../data/ac";
 import { Link } from "react-router-dom";
 
-const AC = () => {
+const Ac = () => {
   const firstFiveImages = acData.slice(0, 5);
 
   return (
@@ -25,4 +25,4 @@ const AC = () => {
   );
 };
 
-export default AC;
+export default Ac;
