@@ -1,25 +1,29 @@
 import React from 'react'
 import { kitchenData } from '../data/kitchen'
+import { Link } from 'react-router-dom'
 
 const Kitchen = () => {
-    const firstFiveKitchen =kitchenData.slice(0,5)
-    
+    const firstFiveImages = kitchenData.slice(0,5)
   return (
     <>
-    KITCHEN
-    <div className='proSection'>
-    {
-      
-      firstFiveKitchen.map((item ,index)=>{
-        return(
-          <div className='ImageBox' key={index}>
-          <img className='proImage' src={item.image} alt="kitchen"/>
-          </div>
-        )
-      })
-    }
-  </div>
-    </>
+   <div className="proTitle">
+        <h2>Furniture</h2>
+      </div>
+   <div className='proSection'>
+        {
+            firstFiveImages.map((item)=>{
+                return(
+                    <div className='imgBox'>
+                        <Link to='/kitchen'>
+                        <img className='proImage' src={item.image} alt="" />
+                        </Link>
+                    </div>
+                )
+            })
+        }
+    </div>
+   
+   </>
   )
 }
 
