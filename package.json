@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bhimarakesh.github.io/e-mart"
   "name": "e-mart",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
      "predeploy": "npm run build",
     "preview": "vite preview"
   },
