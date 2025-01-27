@@ -64,15 +64,15 @@ const Navbar = () => {
           <Link to="/fridge" className="custom-link">
             <li>Fridge</li>
           </Link>
-          <Link to="/" className="custom-link">
+          <Link to="/books" className="custom-link">
             <li>Books</li>
           </Link>
 
-          <Link to="/" className="custom-link">
+          <Link to="/speakers" className="custom-link">
             <li>Speakers</li>
           </Link>
 
-          <Link to="/" className="custom-link">
+          <Link to="/tv" className="custom-link">
             <li>TV's</li>
           </Link>
 
